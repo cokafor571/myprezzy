@@ -1,0 +1,11 @@
+.storefront-primary-navigation.sticky-header {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    background-color: rgba(23, 6, 33, 1);
+ }
+
+.shifted {
+    margin-top: 77px;
+}
+

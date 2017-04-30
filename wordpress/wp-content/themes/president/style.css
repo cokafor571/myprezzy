@@ -1,0 +1,325 @@
+/*
+Theme name: President storefront
+Description: Child theme of Storefront for mypresident website
+Author: Cody Okafor
+Version: 0.1
+Template: storefront
+
+background-color: rgb(232,51,56); 
+background-color: rgb(1,24,69); 
+
+*/
+
+@import url('../storefront/style.css'); 
+ 
+/* General front page content */ 
+
+.entry-title {
+    line-height: 6rem; 
+}
+
+.clearfloat {
+    clear: both; 
+}
+
+#primary.content-area {
+    margin: 0 auto;
+}
+
+/*Header home styles */
+
+.site-search {
+    display: none; 
+}
+
+.site-header {
+    background: url(images/header_image.jpg) no-repeat center center; 
+    background-size: cover; 
+    background-attachment: fixed; 
+    box-shadow: inset 0 0 1em #111; 
+    height: 50rem;
+    padding-top: 0; 
+}
+
+.site-header .col-full {
+    max-width: 100%; 
+    margin: 0 auto; 
+    color: rgb(255, 255, 255);
+    background-color: rgba(23, 6, 33, 0.6);
+}
+
+/* navigation */
+
+@media (min-width: 768px) {
+    .storefront-primary-navigation {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; 
+    }
+}
+
+@media (min-width: 768px) {
+    .main-navigation ul.menu, .main-navigation ul.nav-menu {
+        margin-left: 8rem;  
+        float: left; 
+    }
+}
+
+@media (min-width: 768px) {
+    .woocommerce-active .site-header .main-navigation {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; 
+    }
+}
+
+@media (min-width: 768px) {
+    .woocommerce-active .site-header .site-header-cart {
+        margin-right: 15rem; 
+    }
+}
+
+.primary-navigation {
+    float: left; 
+    width: 50rem; 
+}
+    
+.home.blog .site-header,.home.page:not(.page-template-template-homepage) .site-header,.home.post-type-archive-product .site-header,.no-wc-breadcrumb .site-header {
+    margin-bottom: 0; 
+}
+
+/* Logo styles */
+
+@media (min-width: 768px) {
+.site-header .site-branding {
+    float: none;    
+    margin: 0 auto; 
+    }
+}
+
+.site-header .site-branding img {
+    height: 5.5rem; 
+    margin: 0 auto; 
+}
+
+.site-header .custom-logo-link {
+    float: none; 
+}
+
+/* Content home styles */ 
+
+@media (min-width: 768px) {
+.col-full {
+        max-width: 100%; 
+        padding: 0; 
+    }
+}
+
+@media (min-width: 768px) {
+.right-sidebar .content-area {
+    width: auto; 
+    float: left;
+    margin-right: 4.347826087%;
+    }
+}
+
+/* About home styles */ 
+
+.about h1, .image-red {
+    background-color: rgb(232,51,56);
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.4rem;
+    font-size: 2.5rem;
+    
+}
+
+.about-content {
+    width: 80%;
+    text-align: center; 
+    margin: 0 auto;
+    padding-top: 6rem; 
+    padding-bottom: 1rem; 
+}
+
+.about-content .entry-content p {
+    font-size: 1.5rem;
+    LINE-HEIGHT: 4rem;
+    font-weight: 100;
+    word-spacing: 0.5rem;
+    letter-spacing: 0.3rem; 
+}
+
+/* Shop home styles */ 
+
+.products-content {
+    margin: 0 auto;
+    text-align: center; 
+    background: rgb(255,255,255); 
+    padding-top: 3rem; 
+}
+
+.products-content h1 {
+    color: rgb(39, 11, 56);
+}
+
+.darken {
+    display: inline-block;
+    background: rgb(0,0,0);
+    padding: 0; 
+    position: relative; 
+    margin-bottom: 2rem; 
+}
+
+.darken:hover img {
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    opacity: 0.7;
+}
+ 
+.products-content .darken img {
+    width: 30rem; 
+    height: 36rem; 
+    display: block; 
+
+}
+
+.hover-text {
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 36rem;
+    font-weight: 100;
+    text-align: center;
+    display: table;
+    vertical-align: middle;
+    letter-spacing: 0.3rem; 
+    word-spacing: 0.1rem;
+    font-size: 1.5rem;
+}
+
+.hover-text h4 {
+    display: table-cell;
+    vertical-align: middle; 
+    color: rgb(255, 255, 255);
+    visibility: hidden; 
+}
+
+.hover-text:hover h4 {
+    visibility: visible; 
+}
+
+
+/* Shipping home styles */ 
+
+.ship-handle h1, .image-blue {
+    background-color: rgb(15,52,150);
+    color: rgb(255, 255, 255);
+}
+
+.shipping-content {
+    width: 80%;
+    margin: 0 auto; 
+    text-align: center; 
+    padding-top: 3rem; 
+}
+
+.shipping-content .entry-content p {
+    font-size: 1.5rem;
+    LINE-HEIGHT: 3rem;
+    font-weight: 100;
+    word-spacing: 0.5rem;
+    letter-spacing: 0.3rem; 
+}
+
+.more-link {
+    color: #CC0000;
+    font-size: 1.1rem;
+    font-style: italic; 
+}
+
+/* footer styles */
+
+.site-footer {
+    background: rgb(255,255,255); 
+    color: rgb(0,0,0); 
+}
+
+.contact {
+    width: 70%;
+    margin: 0 auto; 
+}
+
+.contact-form {
+    float: left; 
+}
+
+.footer-floatl {
+    float: left; 
+    display: inline-block; 
+    margin-left: 10rem; 
+}
+
+.social-media {
+    float: right; 
+}
+
+.input-text, input[type=text], input[type=email], input[type=url], input[type=password], input[type=search]{
+    height: 2rem; 
+}
+
+textarea {
+    height: 4rem; 
+}
+
+form p {
+    margin-bottom: 0; 
+}
+
+.footer-border {
+    border-bottom: 4px solid rgb(232,51,56); 
+    max-width: 90%;
+    margin: 0 auto; 
+}
+
+.footer-border-bottom {
+    border-bottom: 2px solid rgb(15,52,150); 
+}
+
+.copyright {
+    margin-top: 1rem;
+    text-align: center; 
+}
+
+/*woocommerce shop styles */ 
+
+.woocommerce-message {
+    margin: 0 auto; 
+    width: 50%;
+    margin-bottom: 2rem; 
+}
+
+.woocommerce-breadcrumb {
+    text-align: center; 
+}
+
+.woocommerce #primary.content-area {
+    margin-left: 5rem; 
+}
+
+/* Cart styles */ 
+
+#primary.content-area.cart {
+    float: none;
+    width: 80%; 
+}
+
+/* Checkout styles */ 
+
+#primary.content-area.checkout {
+    float: none;
+    width: 80%; 
+}
